@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SearchView: View {
-    @StateObject private var viewModel = FlickrViewModel()
+    @StateObject private var viewModel = FlickrViewModel(isLoading: false)
     @State private var searchQuery = ""
     @Namespace private var animationNameSpace
     
